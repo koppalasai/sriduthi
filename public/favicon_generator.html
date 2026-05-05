@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <img id="svgSource" src="favicon.svg" style="display:none">
+    <canvas id="canvas"></canvas>
+    <div id="output"></div>
+    <script>
+        const sizes = [16, 32, 48, 64];
+        const img = document.getElementById('svgSource');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const output = document.getElementById('output');
+
+        img.onload = () => {
+            sizes.forEach(size => {
+                canvas.width = size;
+                canvas.height = size;
+                ctx.clearRect(0, 0, size, size);
+                ctx.drawImage(img, 0, 0, size, size);
+                const dataUrl = canvas.toDataURL('image/png');
+                const p = document.createElement('p');
+                p.id = 'png-' + size;
+                p.textContent = dataUrl;
+                output.appendChild(p);
+            });
+            const done = document.createElement('div');
+            done.id = 'status';
+            done.textContent = 'DONE';
+            output.appendChild(done);
+        };
+    </script>
+</body>
+</html>

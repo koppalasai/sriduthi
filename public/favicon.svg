@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0" y1="256" x2="512" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E70C5"/>
+      <stop offset="1" stop-color="#0F4A8A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Oval Swoosh -->
+  <path d="M460 160C430 80 340 40 256 40C120 40 40 140 40 256C40 372 120 472 256 472C340 472 430 432 460 352" stroke="url(#logoGradient)" stroke-width="48" stroke-linecap="round" fill="none"/>
+
+  <!-- Geometric SDE Typography -->
+  <g fill="url(#logoGradient)">
+    <!-- S -->
+    <path d="M120 200H210V225H150V245H210V290H120V265H180V245H120V200Z" />
+    <!-- D -->
+    <path d="M230 200H280C315 200 340 220 340 245V245C340 270 315 290 280 290H230V200ZM265 225V265H280C295 265 305 260 305 245V245C305 230 295 225 280 225H265Z" />
+    <!-- E -->
+    <path d="M360 200H440V225H395V235H435V255H395V265H440V290H360V200Z" />
+  </g>
+
+  <!-- Sri Dhuthi Enterprises text -->
+  <text x="256" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="42" fill="#0F4A8A">SRI DHUTHI ENTERPRISES</text>
+</svg>
